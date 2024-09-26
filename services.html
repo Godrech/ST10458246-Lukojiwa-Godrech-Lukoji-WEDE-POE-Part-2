@@ -3,28 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./_styleSheets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./_styleSheets/navigation_footer.css">
     <title>Empowered Minds Services</title>
 </head>
-<body bgcolor="bieg">
+<body>
     <div class="header">
         <div class="logo">
             <img src="_images/emplogo.png" alt="Logo" height="100px"/>
         </div>
         <div class="subheading">
-            <h1>What we do</h1>
-            <div class="menu" >
-                <a href="index.html">HOME</a> |
-    <a href="about.html">ABOUT US</a> |
-    <a href="services.html">SERVICES</a> |
-    <a href="contact.html">CONTACT US</a> |
-    <a href="good to know.html">GOOD TO KNOW</a> |
+            <div class="menu">         
+                <div class="nav_a">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                            <li><a href="good to know.html">GOOD TO KNOW</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
+            <h2>What we do</h2>
             <hr>
-            <h3>Our sites are faster than your car!</h3>
+            <h3>We strive to bring education to the youth all around the world!</h3>
         </div>
     </div>
-    <div class="main">
-        <p>We strive to bring education to the youth all around the world!</p>
+
+    <script>
+        const nav_a = document.querySelector('.nav_a');
+
+        nav_a.addEventListener('click', () => {
+        nav_a.classList.toggle('active');
+            });
+
+    </script>
+
+    
+<div class="main">
         <table>
             <tr>
                 <td><img src="_images/img1.jpeg" alt="Logo" height="200px"/>
@@ -50,10 +69,20 @@
 
 
 
-    <hr>
-    <div class="footer">
-        Cultivating Heartful & Mindful Students
-        <p>&copy; 2024 Empowered Minds Web Designs</p>
+    <footer >
+        <div id="social-icons">
+            <div id="footer">
+                    Cultivating Heartful & Mindful Students
+                    <p>&copy; 2024 Empowered Minds Web Designs</p>
+                
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
     </div>
+    </footer>
 </body>
 </html>

@@ -3,60 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./_styleSheets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./_styleSheets/navigation_footer.css">
 <title>Epowered Minds contact services</title>
 </head>
-<body bgcolor="bieg">
+<body>
     <div class="header">
         <div class="logo">
             <img src="_images/emplogo.png" alt="Logo" height="100px"/>
         </div>
         <div class="subheading">
-            <h1>TAKE ACTION NOW, CONTACT US!</h1>
-            <div class="menu" style="margin:2px;">
-                <a href="index.html">HOME</a> |
-    <a href="about.html">ABOUT US</a> |
-    <a href="services.html">SERVICES</a> |
-    <a href="contact.html">CONTACT US</a> |
-    <a href="good to know.html">GOOD TO KNOW</a> |
+            <div class="menu">         
+                <div class="nav_a">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                            <li><a href="good to know.html">GOOD TO KNOW</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <hr>
             <h2>Contact us!</h2>
-            Let your voice reach us, Let us help you.🤗
-            
-        <p>Follow us on social media: @empoweredMinds</p>
-        <p>Email:  support@empoweredMinds.com</p>
-        <p>Phone: +1 800 555 1234</p>
+            <hr>
+            <h3>Let your voice reach us, Let us help you.🤗</h3>
         </div>
     </div>
-    <div class="main">
-        <h2>Find us!</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.7517522451303!2d-0.11908822338260741!3d51.46271417180315!2m
-        3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604690c955555%3A0xc197cb6d884cfccb!2sEmpowered%20Mind%20Services-%20Counselling
-        %2C%20Psychotherapy%20and%20Clinical%20Supervision%20Services!5e0!3m2!1sen!2snl!4v1723636107742!5m2!1sen!2snl" 
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <script>
+        const nav_a = document.querySelector('.nav_a');
+
+        nav_a.addEventListener('click', () => {
+        nav_a.classList.toggle('active');
+            });
+
+    </script>
+
+<div class="main">
+    <p>Follow us on social media: @empoweredMinds</p>
+    <p>Email:  support@empoweredMinds.com</p>
+    <p>Phone: +1 800 555 1234</p>
+<h2>Find us!</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.7517522451303!2d-0.11908822338260741!3d51.46271417180315!2m
+            3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604690c955555%3A0xc197cb6d884cfccb!2sEmpowered%20Mind%20Services-%20Counselling
+            %2C%20Psychotherapy%20and%20Clinical%20Supervision%20Services!5e0!3m2!1sen!2snl!4v1723636107742!5m2!1sen!2snl" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+<br>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_5IkV7-6cPQXm9taiVzLfI7AQACCEDSXbWBDdCRH84Fa2FA/viewform?embedded=true" 
+            width="640" height="959" frameborder="0" marginheight="0" marginwidth="0">Loading…
+    </iframe>
+</div>
     
-<form name="myform" id="myform" method="post"enctype="text/plain">
-    <label for="firstname">First Name</label>
-    <input type="text" name="firstname" id="firstname"><br>
-    <label for="lastname">Last Name</label>
-    <input type="text" name="lastname" id="lastname"><br>
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email"><br>
-    <Input type="submit" name="Submit">
-</form>
-
-
-    </div>
-    
 
 
 
-
-
-    <hr>
-    <div class="footer">
-        Cultivating Heartful & Mindful Students
-        <p>&copy; 2024 Empowered Minds Web Designs</p>
-    </div>
+<footer >
+    <div id="social-icons">
+        <div id="footer">
+                    Cultivating Heartful & Mindful Students
+                    <p>&copy; 2024 Empowered Minds Web Designs</p>
+                
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+         </div>
+        </div>
+</footer>
 </body>
 </html>
